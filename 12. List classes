@@ -1,0 +1,39 @@
+class CustomList:
+    def __init__(self):
+        self.elements = []
+
+    def append_element(self, element):
+        self.elements.append(element)
+
+    def delete_element(self, index):
+        if 0 <= index < len(self.elements):
+            del self.elements[index]
+        else:
+            print("Index out of range")
+
+    def display_elements(self):
+        if self.elements:
+            print("Elements in the list:")
+            for element in self.elements:
+                print(element)
+        else:
+            print("List is empty")
+
+
+# Example usage:
+if __name__ == "__main__":
+    custom_list = CustomList()
+
+    # Appending elements
+    custom_list.append_element(10)
+    custom_list.append_element(20)
+    custom_list.append_element(30)
+
+    # Displaying elements
+    custom_list.display_elements()
+
+    # Deleting an element
+    custom_list.delete_element(1)
+
+    # Displaying elements after deletion
+    custom_list.display_elements()
