@@ -1,0 +1,53 @@
+import math
+
+
+def circle(radius):
+    circumference = 2 * math.pi * radius
+    area = math.pi * radius ** 2
+    return circumference, area
+
+
+def rectangle(length, width):
+    circumference = 2 * (length + width)
+    area = length * width
+    return circumference, area
+
+
+def triangle(base, side1, side2):
+    circumference = base + side1 + side2
+    s = (base + side1 + side2) / 2
+    area = math.sqrt(s * (s - base) * (s - side1) * (s - side2))
+    return circumference, area
+
+
+def main():
+    print("Welcome to the Shape Calculator!")
+    print("1. Circle")
+    print("2. Rectangle")
+    print("3. Triangle")
+    choice = int(input("Enter your choice (1/2/3): "))
+
+    if choice == 1:
+        radius = float(input("Enter the radius of the circle: "))
+        circumference, area = circle(radius)
+        print("Circumference of the circle:", circumference)
+        print("Area of the circle:", area)
+    elif choice == 2:
+        length = float(input("Enter the length of the rectangle: "))
+        width = float(input("Enter the width of the rectangle: "))
+        circumference, area = rectangle(length, width)
+        print("Perimeter of the rectangle:", circumference)
+        print("Area of the rectangle:", area)
+    elif choice == 3:
+        base = float(input("Enter the base of the triangle: "))
+        side1 = float(input("Enter the length of side 1: "))
+        side2 = float(input("Enter the length of side 2: "))
+        circumference, area = triangle(base, side1, side2)
+        print("Perimeter of the triangle:", circumference)
+        print("Area of the triangle:", area)
+    else:
+        print("Invalid choice!")
+
+
+if __name__ == "__main__":
+    main()
