@@ -3,3 +3,5 @@
 3. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/dae5bc9f-eeb1-459a-86f3-d4c0a130a5e5)
 4. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/3f846805-20c8-4ce5-a3b6-99b2b1273367)
 5. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/b800a611-d19c-4bf6-be06-e8163c3aeb7b)
+6. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/ef740329-412a-47b2-9183-57ad44460792)
+7. 
