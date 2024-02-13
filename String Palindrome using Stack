@@ -1,0 +1,35 @@
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+
+def is_palindrome(input_string):
+    stack = Stack()
+    # Push each character of the string onto the stack
+    for char in input_string:
+        stack.push(char)
+
+    reversed_string = ''
+    # Pop each character from the stack to form the reversed string
+    while not stack.is_empty():
+        reversed_string += stack.pop()
+
+    # Check if the original string and the reversed string are the same
+    return input_string == reversed_string
+
+
+# Test the function
+input_string = input("Enter a string: ")
+if is_palindrome(input_string):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
