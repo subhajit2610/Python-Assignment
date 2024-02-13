@@ -1,0 +1,14 @@
+def find_second_largest(numbers):
+    # Sort the list in descending order
+    numbers.sort(reverse=True)
+    return numbers[1]
+
+
+# Example usage
+my_list = []
+n = int(input("Enter upper range of list "))
+for i in range(n):
+    element = int(input("Enter Items: "))
+    my_list.append(element)
+second_largest = find_second_largest(my_list)
+print("Second largest number:", second_largest)
