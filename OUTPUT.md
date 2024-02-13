@@ -10,3 +10,5 @@
 10. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/64ed4b26-353a-4a21-9510-0d2b35e877be)
 11. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/05dcc487-4538-4f37-bba6-5aaa673b2658)
 12. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/3e518104-5f52-45b3-ad89-fe912b83bf99)
+13. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/670f70b1-f348-47a5-9172-f150e680acca)
+14. 
