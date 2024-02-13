@@ -1,0 +1,28 @@
+from datetime import date
+
+
+class Person:
+    def __init__(self, name, dob):
+        self.name = name
+        self.dob = dob
+
+    def calculate_age(self):
+        today = date.today()
+        dob_year, dob_month, dob_day = map(int, self.dob.split('-'))
+        age = today.year - dob_year - ((today.month, today.day) < (dob_month, dob_day))
+        return age
+
+    def is_eligible_to_vote(self):
+        age = self.calculate_age()
+        return age >= 18
+
+
+# Example usage:
+if __name__ == "__main__":
+    name = input("Enter your name: ")
+    dob = input("Enter your date of birth (YYYY-MM-DD): ")
+    person = Person(name, dob)
+    if person.is_eligible_to_vote():
+        print(f"{person.name} is eligible to vote.")
+    else:
+        print(f"{person.name} is not eligible to vote yet.")
