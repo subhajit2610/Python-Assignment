@@ -1,0 +1,18 @@
+def print_pascals_triangle(rows):
+    triangle = []
+
+    for i in range(rows):
+        row = [1]
+        if triangle:
+            last_row = triangle[-1]
+            row.extend([sum(pair) for pair in zip(last_row, last_row[1:])])
+            row.append(1)
+        triangle.append(row)
+
+    # Print the triangle
+    for row in triangle:
+        print(" ".join(map(str, row)).center(rows * 2))
+
+# Example usage:
+num_rows = int(input("Enter the number of rows for Pascal's triangle: "))
+print_pascals_triangle(num_rows)
