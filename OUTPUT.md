@@ -14,4 +14,5 @@
 14. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/a3ba6b75-6367-4b1b-abb3-b4bb6e03586f)
 15. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/71b88686-febb-40d4-9e0d-a52c1f8698ee)
 16. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/224cd408-a11b-4cbb-8955-064f8aee429e)
-
+17. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/5d4d6b9d-5e8c-436b-98d3-b44e97e26f17)
+18. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/d376840f-98b0-488f-81f5-ca82c9097446)
