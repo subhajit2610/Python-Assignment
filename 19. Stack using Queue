@@ -1,0 +1,41 @@
+class Stack:
+    def __init__(self):
+        self.queue1 = []
+        self.queue2 = []
+
+    def push(self, item):
+        # Add item to queue1
+        self.queue1.append(item)
+
+    def pop(self):
+        if not self.queue1:
+            return None
+        # Move all elements except the last one from queue1 to queue2
+        while len(self.queue1) > 1:
+            self.queue2.append(self.queue1.pop(0))
+        # Pop and return the last element from queue1
+        popped_item = self.queue1.pop(0)
+        # Swap queue2 and queue1 so that queue1 always contains the elements
+        self.queue1, self.queue2 = self.queue2, self.queue1
+        return popped_item
+
+    def peek(self):
+        if not self.queue1:
+            return None
+        return self.queue1[-1]
+
+    def is_empty(self):
+        return len(self.queue1) == 0
+
+# Example usage:
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+print("Peek:", stack.peek())  # Should print 3
+print("Pop:", stack.pop())    # Should print 3
+print("Peek:", stack.peek())  # Should print 2
+print("Is Empty?", stack.is_empty())  # Should print False
+stack.pop()
+stack.pop()
+print("Is Empty?", stack.is_empty())  # Should print True
