@@ -1,0 +1,16 @@
+def remove_key(dictionary, key):
+    # Check if the key exists in the dictionary
+    if key in dictionary:
+        # Remove the key from the dictionary
+        dictionary.pop(key)
+        print(f"Key '{key}' removed successfully.")
+    else:
+        print(f"Key '{key}' not found in the dictionary.")
+
+
+# Example usage
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+print("Original Dictionary:", my_dict)
+key_to_remove = input("Enter the key to remove: ")
+remove_key(my_dict, key_to_remove)
+print("Updated Dictionary:", my_dict)
