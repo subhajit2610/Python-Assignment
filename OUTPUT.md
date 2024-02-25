@@ -18,3 +18,4 @@
 18. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/d376840f-98b0-488f-81f5-ca82c9097446)
 19. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/d3bdf05f-6a0c-4f00-a4a6-b82166e133d1)
 20. ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/1a7c522e-803d-448b-b3f4-637716bd5705)
+21. Sum of series org ![image](https://github.com/subhajit2610/Python-Assignment/assets/113170872/22a4f224-bf0d-4c75-b382-9cfbb4262a3d)
