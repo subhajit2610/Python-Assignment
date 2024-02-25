@@ -1,0 +1,18 @@
+def sum_of_series(num):
+    if num == 0:
+        return 0
+    elif num % 2 == 0:
+        return -pow(num, 2) + sum_of_series(num - 1)
+    else:
+        return pow(num, 2) + sum_of_series(num - 1)
+
+
+# Test the function
+n = int(input("Enter the value of n: "))
+res = sum_of_series(n - 1)
+if n % 2 == 0:
+    result = res + -pow(n, n)
+    print("Sum of the series:", result)
+else:
+    result = + res + pow(n, n)
+    print("Sum of the series:", result)
